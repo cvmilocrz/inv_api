@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API inventarios</title>
+    <link rel="icon" type="image/x-icon" href="https://media.glassdoor.com/sql/2734083/integral-group-solution-igs-squarelogo-1640680982226.png">
+    <style>
+        /* Estilos para el contenedor principal */
+        #background-container {
+            position: fixed; /* Fija el contenedor en la ventana */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Asegura que esté detrás de todo el contenido */
+        }
+
+
+        #background-image {
+            width: 100%;
+            height: 100%;
+            /*background-image: url(https://static.vecteezy.com/system/resources/previews/030/756/332/large_2x/black-orange-red-3d-abstract-wallpaper-ai-generative-free-photo.jpg);*/
+            background-image: url(https://www.hdwallpapers.in/download/orange_grey_curves_lines_ribbons_layers_wallpaper_blur_background_4k_hd_abstract-3840x2160.jpg);
+            /*background-image: url(https://4kwallpapers.com/images/wallpapers/hexagons-patterns-orange-background-orange-blocks-black-2880x1800-2287.png);*/
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        body {
+            user-select: none;
+            font-family: OPTIStymie;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-wrapper {
+            width: 320px;
+            color: #fff;
+            border-radius: 10px;
+            padding: 60px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            z-index: 1;
+        }
+
+        .logoImg {
+            width: 300px;
+        }
+
+        .tittle{
+            font-family: Bahnschrift;
+            color: white;
+        }
+
+        .form-wrapper::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            filter: blur(10px);
+            z-index: -1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Contenedor para la imagen de fondo -->
+    <div id="background-container">
+        <div id="background-image"></div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="form-wrapper" id="formWrapper">
+        <!-- Imagen del logo -->
+        <img src="https://www.igroupsolution.com/wp-content/uploads/2022/03/Copia-de-Logo-IGS-lineal-blanco.png" alt="Logo IGS" class="logoImg">
+        <h1 class="tittle">API para Inventarios <span style="color: orangered;">IGS</span></h1>
+    </div>
+</body>
+</html>
